@@ -1,0 +1,2943 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="../data/owl/ontology.owl"
+         xmlns="../data/owl/ontology.owl#">
+
+<owl:Ontology rdf:about="../data/owl/ontology.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_color">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Color"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_detail">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Detail"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#for_event">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Event"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#made_from_material">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Material"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_fastener">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Fastener"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_pattern">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Pattern"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#for_season">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Season"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_style">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Style"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_stitch">
+  <rdfs:domain rdf:resource="#Clothes"/>
+  <rdfs:range rdf:resource="#Stitch"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_heel">
+  <rdfs:domain rdf:resource="#Shoe"/>
+  <rdfs:range rdf:resource="#Heel"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_toe">
+  <rdfs:domain rdf:resource="#Shoe"/>
+  <rdfs:range rdf:resource="#Toe"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_neckline">
+  <rdfs:domain rdf:resource="#Top"/>
+  <rdfs:range rdf:resource="#Neckline"/>
+  <rdfs:domain rdf:resource="#Dress"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_sleeve">
+  <rdfs:domain rdf:resource="#Top"/>
+  <rdfs:range rdf:resource="#Sleeve"/>
+  <rdfs:domain rdf:resource="#Dress"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_waistline">
+  <rdfs:domain rdf:resource="#Dress"/>
+  <rdfs:range rdf:resource="#Waistline"/>
+  <rdfs:domain rdf:resource="#Skirts"/>
+  <rdfs:domain rdf:resource="#Shorts"/>
+  <rdfs:domain rdf:resource="#Trousers"/>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="#description"/>
+
+<owl:AnnotationProperty rdf:about="#label"/>
+
+<owl:AnnotationProperty rdf:about="#name"/>
+
+<owl:AnnotationProperty rdf:about="#main_class"/>
+
+<owl:AnnotationProperty rdf:about="#sub_class"/>
+
+<owl:AnnotationProperty rdf:about="#alias"/>
+
+<owl:Class rdf:about="#Clothes">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lowerbody">
+  <rdfs:subClassOf rdf:resource="#Clothes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Shoe">
+  <rdfs:subClassOf rdf:resource="#Lowerbody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Trousers">
+  <rdfs:subClassOf rdf:resource="#Lowerbody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Skirts">
+  <rdfs:subClassOf rdf:resource="#Lowerbody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Shorts">
+  <rdfs:subClassOf rdf:resource="#Lowerbody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Upperbody">
+  <rdfs:subClassOf rdf:resource="#Clothes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Top">
+  <rdfs:subClassOf rdf:resource="#Upperbody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Headgear">
+  <rdfs:subClassOf rdf:resource="#Upperbody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Handwear">
+  <rdfs:subClassOf rdf:resource="#Upperbody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Wholebody">
+  <rdfs:subClassOf rdf:resource="#Clothes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Outerwear">
+  <rdfs:subClassOf rdf:resource="#Wholebody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dress">
+  <rdfs:subClassOf rdf:resource="#Wholebody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Suit">
+  <rdfs:subClassOf rdf:resource="#Wholebody"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Lingerie">
+  <rdfs:subClassOf rdf:resource="#Clothes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Hosiery">
+  <rdfs:subClassOf rdf:resource="#Lingerie"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Swimsuit">
+  <rdfs:subClassOf rdf:resource="#Lingerie"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Underpant">
+  <rdfs:subClassOf rdf:resource="#Lingerie"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Brassiere">
+  <rdfs:subClassOf rdf:resource="#Lingerie"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Accessories">
+  <rdfs:subClassOf rdf:resource="#Clothes"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Bag">
+  <rdfs:subClassOf rdf:resource="#Accessories"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Belt">
+  <rdfs:subClassOf rdf:resource="#Accessories"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Watch">
+  <rdfs:subClassOf rdf:resource="#Accessories"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Jewelry">
+  <rdfs:subClassOf rdf:resource="#Accessories"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eyeglasses">
+  <rdfs:subClassOf rdf:resource="#Accessories"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Attribute">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Color">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Detail">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Event">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Material">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Fastener">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Heel">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Neckline">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Pattern">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Season">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Sleeve">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Stitch">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Style">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Toe">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Waistline">
+  <rdfs:subClassOf rdf:resource="#Attribute"/>
+</owl:Class>
+
+<Shoe rdf:about="#Q456479">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jodhpur boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ankle boot designed as a riding boot with a rounded toe and a low heel</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q4845639">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brogue shoe</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">style of low-heeled shoe or boot decorated with rows of perforations</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">brogue</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q29370018">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">desert boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ankle boot with lace closure</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chukka boot</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q252484">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">moccasin</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of shoe originating with North American indigenous peoples</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q1044570">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">combat boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rugged, laced boot worn by soldiers during combat or training</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q351134">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">winklepicker</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">style of shoe or boot with long pointed upturned toe</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q25052061">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholecut</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe with upper made from a single piece of leather</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q1138187">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cowboy boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boot with Cuban heel, rounded to pointed toe, high shaft, no lacing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cowboy boots</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q1069098">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chelsea boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">close-fitting, ankle-high boots with elastic side panel</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q15647197">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thigh-high boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boot reaching above the knee</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">over-the-knee boot</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q190868">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of footwear extending above the ankle joint</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boots</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q1199962">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">derby shoe</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of shoe with the tongue and vamp made in one piece and open lacing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">derby</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q805212">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ballet flat</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of shoe</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ballerina shoe</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dolly shoes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ballet flats</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q15131569">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slide</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">open-toed slip-on sandal</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slides</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q582151">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">platform shoe</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe with a platform sole</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triangle heels</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">platforms</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disco boots</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q192130">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horseshoe</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fabricated product, designed to protect a horse's hoof from wear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">horseshoes</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q893193">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boat shoe</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of shoe</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deck shoe</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q1756271">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hiking boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sturdy lace-up ankle boot for outdoor wear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hiking shoe</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q1929383">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sneakers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">footwear with a flexible rubber or synthetic sole and a fabric, cloth or leather upper</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kicks</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">athletic shoes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">running shoes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trainers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gym shoes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tennis shoes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flats</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sneaker</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">runners</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sport shoes</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q131704">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sandal</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of footwear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q380339">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flip-flops</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of sandal</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thongs</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thong sandal</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q29370125">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rain boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waterproof boot for wet weather</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q1888786">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slip-on shoe</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of low, lace-less shoe</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loafer</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q214724">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snowshoe</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">footwear for walking over snow</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow rackets</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow-shoe</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snowshoes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">show shoes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow shoe</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow racket</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q4526862">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gaiters</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">garment worn over the shoe and lower pants leg</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gaiter</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q3714094">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">après-ski boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow boot, literally "after skiing boot"</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow boot</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snowboots</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snowboot</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snow boots</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apres-ski boot</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q7397732">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saddle shoe</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">casual footwear with saddle-shaped decorative panel</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saddle oxford</alias>
+</Shoe>
+
+<Shoe rdf:about="#Q805242">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ballet boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">style of fetish footwear that merges the look of the pointe shoe with a high heel</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+</Shoe>
+
+<Shoe rdf:about="#Q1994752">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">steel-toe boot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">work shoe or boot with armored toe cap</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">safety shoe</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">steel-toed boot</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">steel-toed shoe</alias>
+</Shoe>
+
+<Suit rdf:about="#Q2736850">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-piece swimsuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimwear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q3706052">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boardshorts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose, usually colorful swim shorts orignally worn by surfers, ending just above the knee</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boardies</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baggies</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">board shorts</alias>
+</Suit>
+
+<Suit rdf:about="#Q32187440">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">legskin</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a style of swimsuit typically worn by male swimmers covering the mid-waist to ankle</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swim tights</alias>
+</Suit>
+
+<Suit rdf:about="#Q95918226">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two-piece swimsuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimsuit comprised of two different pieces</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two piece swimsuit</alias>
+</Suit>
+
+<Suit rdf:about="#Q936034">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burqini</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of swimsuit for women, intended to comply with the Quranic admonition for Muslim women to dress modestly</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodykini</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burquini</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burkini</alias>
+</Suit>
+
+<Suit rdf:about="#Q1462535">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monokini</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">topless swimsuit designed by Rudi Gernreich</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q212989">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimsuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clothing worn for swimming</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cossie</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimming suit</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimming trunks</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimwear</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bathers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bathing suit</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimming costume</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swim trunks</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tog</alias>
+</Suit>
+
+<Suit rdf:about="#Q2027544">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maillot</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's one-piece swimsuit</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tank suit</alias>
+</Suit>
+
+<Suit rdf:about="#Q7223116">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimwear</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clothing for wear at the beach, or at poolside</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beachwear</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swim- and beachwear</alias>
+</Suit>
+
+<Shorts rdf:about="#Q3895873">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trunks</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short trousers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+</Shorts>
+
+<Suit rdf:about="#Q4907416">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bikini</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any of various styles of swimsuits based on or influenced by the bikini</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q87504644">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jammers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a style of swimsuit typically worn by male swimmers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swim jammers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jammer</alias>
+</Suit>
+
+<Suit rdf:about="#Q2010326">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swim briefs</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any briefs-style male swimsuit</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">racing briefs</alias>
+</Suit>
+
+<Suit rdf:about="#Q7885847">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body-length swimsuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-piece swimsuit with legs or sleeves or both, worn for sun protection or to improve speed in competitiion swimming</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aquatard</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swimskin</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodyskin</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">full body swimsuit</alias>
+</Suit>
+
+<Suit rdf:about="#Q1706305">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tankini</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two-piece woman's swimsuit</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tank-top bikini</alias>
+</Suit>
+
+<Suit rdf:about="#Q4589094">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">swim diaper</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diaper that is made for those who have fecal incontinence</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q14090">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bikini</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">two-piece women's swimwear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Trousers rdf:about="#Q107196707">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pantalona</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind of trousers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q205469">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zip-off pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers which can be converted to shorts by unzipping the lower leg pieces</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">convertible pants</alias>
+</Trousers>
+
+<Shorts rdf:about="#Q303347">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bermuda shorts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knee-length walking shorts for men or women</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bermudas</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bermuda</alias>
+</Shorts>
+
+<Trousers rdf:about="#Q38865406">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leather pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers made from leather</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leather trousers</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q23038829">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beach pajamas</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">women's long, full trousers with matching tops worn as resort or leisure wear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beach pyjamas</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q13743061">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chainsaw safety trousers</label>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chainsaw trousers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chainsaw protective trousers</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q16698537">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slacks</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">informal trousers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q931529">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-rise jeans</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">style of pants</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Shorts rdf:about="#Q50697541">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short shorts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very short shorts, popular from the 1930s</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short-shorts</alias>
+</Shorts>
+
+<Trousers rdf:about="#Q2426768">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tracksuit bottoms</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soft trousers made for athletic or leisure purposes</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">track suit trousers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweatpants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweat pants</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q5645673">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hammer pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modified baggy pants tapered at the ankle with a sagging rise, suitable for hip-hop dancing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q83363">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jeans</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers often made from denim or dungaree cloth</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue jeans</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jean</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blue jean</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denim</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q1009335">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleated trousers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers cut full through the hips and pleated at the waist</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleated pants</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q365132">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knickerbockers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">full breeches gathered into bands below the knee</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plus fours</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q1449673">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stirrup pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">close-fitting tapered pants with bands for the feet</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stirrup leggings</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q7127017">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palazzo trousers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">women's trousers with very full legs</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">palazzo pants</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q332529">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overpants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protective trousers worn over everyday trousers or uniform breeches</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overtrousers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sailcloth trousers</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q822893">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sirwal</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose trousers of ancient origin</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salvar</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shalvar</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harem pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Turkish trousers</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q11330084">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hip-huggers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-rise trousers or shorts</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q3362445">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fall-front trousers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers with a flap over a front opening, usually buttoning on both sides</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deck trousers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fall-front pantaloons</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sailor trousers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sailor pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drop-front pants</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q38795853">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pantaloons</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">close-fitting trousers, especially those with a strap under the foot, as worn in the early 19th century</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q1568360">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flares</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers cut wider at the ankle than the knees</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flared pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bell-bottoms</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flared trousers</alias>
+</Trousers>
+
+<Suit rdf:about="#Q29655766">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ski trousers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers worn for skiing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ski pants</alias>
+</Suit>
+
+<Trousers rdf:about="#Q11083098">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweatpants</label>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sweat suits</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q6081994">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bloomers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">women's trousers gathered in a ruffle below the knee, similar to the 19th-century undergarment</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q7133943">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parachute pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of trousers made of nylon</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parachute trousers</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q1036057">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cargo pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loosely cut pants originally designed for tough, outdoor activities, characterized by large bellows pockets on the legs</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cargo trousers</alias>
+</Trousers>
+
+<Shorts rdf:about="#Q3311978">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micro-short</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of hot pant</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hot short</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skimpy short</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skimpy pant</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micropant</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hot pant</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micro-pant</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microshort</alias>
+</Shorts>
+
+<Trousers rdf:about="#Q71722234">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jean shorts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of shorts sometimes made from cutting jeans</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jorts</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denim shorts</alias>
+</Trousers>
+
+<Shorts rdf:about="#Q14957233">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hot pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Very brief, tight shorts mainly worn by women and girls, popular in the late 1960s and early 1970s</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microshort</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hotpants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short shorts</alias>
+</Shorts>
+
+<Trousers rdf:about="#Q3377759">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wide leg jeans</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of trousers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baggy pants</alias>
+</Trousers>
+
+<Shorts rdf:about="#Q75112369">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-rise shorts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">style of shorts</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+</Shorts>
+
+<Trousers rdf:about="#Q1034971">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capri pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calf-length trousers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clam-diggers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">three quarter pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toreador pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">capris</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shants</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q12744478">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harem pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baggy, long pants caught in at the ankle</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harem trousers</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q7158978">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pedal pushers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calf-length women's trousers, often cuffed</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clam-diggers</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q770562">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jodhpurs</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">full-hipped riding trousers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q1074407">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chinos</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">casual trousers made of chino cloth</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chino pants</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q4332943">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxford bags</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose-fitting baggy form of trousers favoured by members of the University of Oxford</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q842933">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thai fisherman pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lightweight unisex trousers that are made very wide in the waist and wrapped to fit</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q3489028">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gymnastic pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stretch trousers with stirrups, part of men's regulatiion gymnastics competition uniform</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q3530132">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tobi trousers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers meant to interface with tobi-style (split-toe) boots</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q10438366">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">divided skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt with separate legs cut so that when the wearer is standing he division of the two legs is concealed</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trouser skirt</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q2302770">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">breeches</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">article of clothing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knee-breeches</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">britches</alias>
+</Trousers>
+
+<Shorts rdf:about="#Q2461439">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gym shorts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts worn for athletics</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+</Shorts>
+
+<Trousers rdf:about="#Q8054336">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yoga pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-binding stretch pants originally worn as athletic or leisurewear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Trousers rdf:about="#Q18088270">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress trousers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long trousers, especially those worn a part of a suit</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit trousers</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q618998">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skinny jeans</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jeans or other trousers tailored to fit very close to the body, especially through the legs</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slim-fit pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gas pipes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stovepipes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pencil pants</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drainpipes</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cigarette pants</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q13383825">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overalls</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers with attached bib and shoulder straps</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dungarees</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bib-and-brace overalls</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bib overalls</alias>
+</Trousers>
+
+<Trousers rdf:about="#Q30015243">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pit trousers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sturdy trousers worn by mine workers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trousers</sub_class>
+</Trousers>
+
+<Suit rdf:about="#Q29655790">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ski jacket</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jacket worn for skiing, or for general cold-weather wear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q374541">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ski suit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clothing for skiing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Skirts rdf:about="#Q2160801">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of clothing worn from the waist downwards</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q22921095">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overskirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt worn draped over a dress, underskirt or petticoat</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q29655834">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">godet skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt with godets inserted to add width at the hemline</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q18121766">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pleated skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt with fullness controlled by pleats</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q107196210">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind of skirt</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q22810159">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zagalejo</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long skirt or petticoat, often brightly colored or trimmed</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q883680">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pencil skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very narrow straight skirt</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q15133790">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">culottes</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's split skirt; earlier, breeches or knickers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">culottes</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q75112734">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-rise skirts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">style of skirt</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q17127322">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">string skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belt or waistband with numerous strings hanging down to form a skirt or apron, of prehistoric origin</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q7667931">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt made of re-purposed or "recycled" t-shirts</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tee-skirt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q230823">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">miniskirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short skirt that usually extends to mid-thigh</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mini-skirt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q1485316">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wrap skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">method of attachment for clothing on the lower half of the torso</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q83332911">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trumpet skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A straight skirt with a hem flounce that flares away from the body at the hem.</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q29545745">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maxiskirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extra long skirts that usually extend to the ankle</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q100445024">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">riding skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long, wrap-around skirt for riding sidesaddle</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">riding-skirt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q1411510">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">men's skirts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any of various contemporary or historical skirts or skirt-like garments worn by men and boys</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kilt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q83334198">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tiered skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">made of several horizontal layers, each wider than the one above, and divided by stitching. Layers may look identical in solid-colored garments, or may differ when made of printed fabrics.</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q83333946">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circle skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a skirt cut in sections to make one or more circles with a hole for the waist, so the skirt is very full but hangs smoothly from the waist without darts, pleats, or gathers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q83333769">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bubble skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a voluminous skirt whose hem is tucked back under to create a balloon or bubble effect at the bottom.</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">balloon skirt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q83334145">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gored skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skirt cut in pieces that are triangular or wedge-shaped so that there is more fullness at the hem than at the waist.</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q4851617">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ballerina skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mid-calf to ankle length full skirt made of many layers, as worn by ballerinas</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q4119022">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">denim skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt made of denim, and often styled with a fly front and pockets like jeans</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jean skirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jeans skirt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q1359804">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tutu</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt worn in ballet</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ballet tutu</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q1949237">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pareo</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simple wrap tied as a dress or skirt, based on a garment from Tahiti</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lavalava</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q7283272">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rah-rah skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short, flounced, layered skirt that originated in cheerleading, popular in the 1980s</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ra-ra skirt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q83333837">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bell skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flared noticeably from the waist but then, unlike a church bell, cylindrical for much of its length</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q363031">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skort</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pair of shorts that look like a skirt, or shorts with a skirt-like panel in front and back</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skorts</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q5597493">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grass skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt made of long stems of grass bound to a waistband</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hula skirt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q83332399">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pegged skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skirt shaped with fullness at the waistline but no fullness at the hemline.</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q5647451">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handkerchief skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt with an asymmetric hem, resembling a handkerchief that is held by the centre so that its corners hang down as points</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handkerchief-point skirt</alias>
+</Skirts>
+
+<Skirts rdf:about="#Q1637220">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hobble skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt that is narrower at the gen than the knee</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q83333892">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bustle skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skirt shaped with much more fullness in the back than in the front, accommodating a bustle pad or petticoat for added fullness underneath</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q83333994">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flared skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A skirt cut to be wider at the hem than at the waistline.</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Skirts rdf:about="#Q102248396">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirt shorter than traditionally</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skirts</sub_class>
+</Skirts>
+
+<Shorts rdf:about="#Q49223">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">panties</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">form of underwear designed to be worn by women and girls</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knickers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">panty</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undies</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">briefs</alias>
+</Shorts>
+
+<Shorts rdf:about="#Q6582103">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">briefs</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snug-fitting underpants with leg openings</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+</Shorts>
+
+<Shorts rdf:about="#Q11698020">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Figi</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type of panties</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+</Shorts>
+
+<Shorts rdf:about="#Q878957">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boxer briefs</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">men's underpants, with legs like boxer shorts but tight-fitting like briefs</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boxer briefs</alias>
+</Shorts>
+
+<Shorts rdf:about="#Q7863403">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">underpants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undergarment worn next to the body having legs or leg openings</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pants</alias>
+</Shorts>
+
+<Shorts rdf:about="#Q1944079">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">period panties</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">underpants designed to absorb menstrual flow</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">period underwear</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">menstrual underwear</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">menstrual panties</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Period underwear</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">period undies</alias>
+</Shorts>
+
+<Shorts rdf:about="#Q895612">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boxer shorts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">men's loose-fitting underpants</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose boxers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boxers</alias>
+</Shorts>
+
+<Shorts rdf:about="#Q7832982">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">training pants</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toddlers' underpants for toilet training</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+</Shorts>
+
+<Shorts rdf:about="#Q2125696">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cycling shorts</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts for bicycle riding</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bike shorts</alias>
+</Shorts>
+
+<Shorts rdf:about="#Q29353540">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">drawers</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undergarments extending from the waist to the top of the knees or below</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lowerbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorts</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knickers</alias>
+</Shorts>
+
+<Top rdf:about="#Q17130629">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoop skirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shaped framework of reed, cane, or steel, used to support women's dresses in the fashionable silhouette of a particular period</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoopskirt</alias>
+</Top>
+
+<Top rdf:about="#Q76768">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">garment for the upper body</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q19968163">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweat shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fleece overshirt</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q232191">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweater</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knitted garment from the upper body</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jumper</alias>
+</Top>
+
+<Top rdf:about="#Q2046167">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pullover</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">garments, waistlength or longer, without a front opening, that must be pulled over the head</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q1552950">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guayabera</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">men's shirt typically distinguished by two vertical rows of closely sewn pleats that run the length of the front and back of the shirt</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q755313">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polo shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shirt with a collar</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">golf shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tennis shirt</alias>
+</Top>
+
+<Top rdf:about="#Q340704">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleeveless shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t-shirt without sleeves, sometimes cut back far at the shoulders, used both as summer clothing as well as athletic gear</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tank top</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">singlet</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baniyan</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">athletic shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wifebeater</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">banian</alias>
+</Top>
+
+<Top rdf:about="#Q131151">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T-shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">piece of clothing with short sleeves, a round or V-shaped neckline, without collars, pockets or buttons</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tee-shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tee shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tshirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tee</alias>
+</Top>
+
+<Top rdf:about="#Q7960356">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waist</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's blouse or bodice</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shirt-blouse</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tailored blouse</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shirtwaist</alias>
+</Top>
+
+<Top rdf:about="#Q20015492">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chambra</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spanish woman's garment for the upper body, forerunner of the blouse</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q1687904">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jersey</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knitted pullover, or any of various sewn tops of jersey knit fabric</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jersey frock</alias>
+</Top>
+
+<Top rdf:about="#Q67198900">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ripped sleeves</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shirt with torn fabric at the sleeves</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q208968">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guernsey</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thick, close-fitting pullover sweaters knitted in intricate patterns, generally of one color, usually blue, and worn especially by fishermen and sailors of Scotland and England</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gansey</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knit-frock</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guersey-frock</alias>
+</Top>
+
+<Top rdf:about="#Q152563">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blouse</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">women's garment for the upper body</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's blouse</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">girl's blouse</alias>
+</Top>
+
+<Top rdf:about="#Q50386321">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shrug</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">very short sweater or jacket with sleeves cut in one with the body</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q29236905">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overblouse</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blouse designed to be worn over trousers or a skirt, rather than tucked in</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q5027721">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">camp shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose, straight-cut, short-sleeved shirt or blouse</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lounge shirt</alias>
+</Top>
+
+<Top rdf:about="#Q376560">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">twin set</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardigan sweater with matching short sleeve pullover or shell</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">twinset</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">twin sweaters</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweater set</alias>
+</Top>
+
+<Top rdf:about="#Q5556682">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ghillie shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose-fitting shirt, with a laced closure at the front neckline, worn informally with a kilt in Scottish highland dress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jacobean shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jacobite shirt</alias>
+</Top>
+
+<Top rdf:about="#Q930924">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodice</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of clothing for women and girls, traditional tight-fitting sleeveless garment for the torso and bust; later, the portion of a dress that covers the upper body</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q12828580">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nimcha</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short sleeveless and sleeveless garment for women</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q1468747">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crop top</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any top or t-shirt cut shorter than the waist</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q1427081">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flannel shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shirt made of soft woven fabric with a lightly napped surface.</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q920929">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoodie</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweatshirt with a hood</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hooded sweatshirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoodie</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hoody</alias>
+</Top>
+
+<Top rdf:about="#Q877140">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cardigan</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of knitted garment that has an open front</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q2393753">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">garment with a collar and a full-length opening at the front, which is fastened using buttons or shirt studs</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">button shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">button-front</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">button down shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">button-up shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">button-front shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">button-down shirt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">button-down</alias>
+</Top>
+
+<Top rdf:about="#Q1146363">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nightshirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shirtlike garment intended for wear while sleeping most often used by women</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleepshirt</alias>
+</Top>
+
+<Top rdf:about="#Q22282822">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turtleneck sweater</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweater with a polo neck</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turtleneck pullover</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polo neck</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">turtleneck</alias>
+</Top>
+
+<Top rdf:about="#Q5184798">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crew neck</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">round neckline fitting close to the base of the neck, or a shirt or sweater with such a neckline</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crew-neck</alias>
+</Top>
+
+<Top rdf:about="#Q2623418">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sports jersey</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifying shirt worn as part of a sports uniform</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jersey</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">player jersey</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">team jersey</alias>
+</Top>
+
+<Top rdf:about="#Q2380327">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waistcoat</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upper-body garment extending well below the waist, sometimes with sleeves in the 18th century, more often sleeveless</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vest</alias>
+</Top>
+
+<Top rdf:about="#Q201714">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tunic</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simple T-shaped or sleeveless garment, usually unfitted, of archaic origin</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tunica</alias>
+</Top>
+
+<Top rdf:about="#Q102245965">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long-sleeved blouse</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blouse with long sleaves</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q5714710">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">henley shirt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collarless pullover shirt with a button placket at the neck</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">henley</alias>
+</Top>
+
+<Top rdf:about="#Q2455998">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">half zip sweater</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pullover sweater, usually  with a mock turtleneck and a short front opening closed with a zipper or buttons</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">half zip pullover</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quarter zip pullover</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">button pullover</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quarter zip sweater</alias>
+</Top>
+
+<Top rdf:about="#Q14633326">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube top</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoulderless, sleeveless woman's garment for upper body, generally elasticized</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+</Top>
+
+<Top rdf:about="#Q2337539">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wrap top</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wrapped woman's top, tied behind or on the side</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cache-cœur</alias>
+</Top>
+
+<Top rdf:about="#Q2940816">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">casaquin</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's garment shaped like a man's tailcoat, with a flaring skirt</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">upperbody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">top</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">casaquin bodice</alias>
+</Top>
+
+<Dress rdf:about="#Q109326154">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hijab</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">principles guiding modest dress for men and women following Islam</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q4979481">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brunswick</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's hooded jacket or dress with long tight sleeves worn with a matching petticoat</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brunswick sack</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brunswick gown</alias>
+</Dress>
+
+<Dress rdf:about="#Q1167248">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mantua</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">draped and pleated woman's dress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q29583157">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ruffle dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress with ruffles</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ruffled dress</alias>
+</Dress>
+
+<Dress rdf:about="#Q7639866">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sundress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lightweight warm weather dress, usually with shoulder straps</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q15008044">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sheath dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of dress designed to fit close to the body, relatively unadorned</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sheath</alias>
+</Dress>
+
+<Dress rdf:about="#Q11018285">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mini dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress ending well above the knee</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">minidress</alias>
+</Dress>
+
+<Dress rdf:about="#Q29028887">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemise dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress hanging straight from the shoulders</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemise frock</alias>
+</Dress>
+
+<Dress rdf:about="#Q17142643">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">redingote</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">women's dress  open in front to show an underskirt or with a front gore of contrasting material, with collar and lapels and long sleeves; or a three-quarter length or full-length fitted overcoat with flared skirts</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q29583187">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">godet dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress shaped with godets</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q170063">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wedding dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress worn by a bride during the wedding ceremony</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bridal dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bridal gown</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wedding gown</alias>
+</Dress>
+
+<Dress rdf:about="#Q66627837">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maternity dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress cut to accommodate  a pregnant woman's changing body shape</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q30588951">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bodycon dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tight figure-hugging dress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body-con dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body con dress</alias>
+</Dress>
+
+<Dress rdf:about="#Q16949531">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coatdress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">women's tailored dress cut to resemble an overcoat</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coat dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coat-dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">robe manteau</alias>
+</Dress>
+
+<Dress rdf:about="#Q18353419">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sailor dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">women's (more usually girl's) dress with a sailor collar</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q8037587">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wrap dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress with a front closure formed by wrapping one side across the other</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q635784">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ball gown</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">most formal style of full-length woman's evening dress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ball dress</alias>
+</Dress>
+
+<Dress rdf:about="#Q21045354">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cape dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress with an integral cape or capelet; less often, a dress with matching cape</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q107325619">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strap dress</label>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q29230889">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">overdress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress worn over another, especially one designed or draped to show an underdress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q2479458">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jumper</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleeveless, collarless dress worn over a blouse, shirt or sweater</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pinafore</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pinny</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sleeveless dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pinafore dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jumper dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jumper skirt</alias>
+</Dress>
+
+<Dress rdf:about="#Q3603737">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empire silhouette</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's dress style with a high waist and narrow skirt</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empire line</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empire style</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empire waist</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empire-line dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemise dress</alias>
+</Dress>
+
+<Dress rdf:about="#Q10707950">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tent dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress that hangs loose from shoulder to below the hips, with no waistline</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trapeze line</alias>
+</Dress>
+
+<Dress rdf:about="#Q10425490">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ballet dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress worn by ballerinas</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q43297761">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">day dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's dress appropriate for general wear in daytime; less formal than afternoon dress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">daytime dress</alias>
+</Dress>
+
+<Dress rdf:about="#Q107196838">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress first communion</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kind of ceremonial dress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q10496308">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">flapper dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knee-length, low-waisted dress, often with fringe or beading</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">charleston dress</alias>
+</Dress>
+
+<Dress rdf:about="#Q7621684">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strapless dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress without straps or sleeves, usually with a fitted bodice</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strapless</alias>
+</Dress>
+
+<Dress rdf:about="#Q10671590">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">slip dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thin, usually bias-cut dress with narrow shoulder straps, similar to a woman's slip</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q1512004">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cocktail dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">informal but rather elegant dress suitable for semi-formal occasions</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q249975">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sack-back gown</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any of several styles of woman's dress with a tight bodice and a sack-back consisting of two box pleats, popular in the 18th century</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contouche</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sacque</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">robe battante</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">watteau gown</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sack</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">robe à la française</alias>
+</Dress>
+
+<Dress rdf:about="#Q11284623">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">afternoon dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's semiformal dress for afternoon social occasions</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q5029017">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Can-can dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dresses which were historically worn during the can-can dance.</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+</Dress>
+
+<Dress rdf:about="#Q16860562">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maxi dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calf-length or longer dress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maxidress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long Dress</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">long dresses</alias>
+</Dress>
+
+<Dress rdf:about="#Q65951312">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweater dress</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knitted or crocheted dress</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wholebody</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dress</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sweaterdress</alias>
+</Dress>
+
+<Bag rdf:about="#Q467505">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handbag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">handled medium-to-large bag that is often fashionably designed, typically used by women, to hold personal items</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purse</alias>
+</Bag>
+
+<Bag rdf:about="#Q97621180">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waist pouch (hebao)</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">embroidered pouch for carrying loose change etc, purse, pocket (in clothing)​</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waist wallet</alias>
+</Bag>
+
+<Bag rdf:about="#Q29480122">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">traveling bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag carried by hand and designed to hold a traveler's clothes and other personal articles</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">travel bag</alias>
+</Bag>
+
+<Bag rdf:about="#Q2447985">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tote bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+</Bag>
+
+<Bag rdf:about="#Q29545875">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">envelope bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clutch bag with a fold-over flap, made to resemble an envelope</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+</Bag>
+
+<Bag rdf:about="#Q200814">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suitcase</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">form of luggage</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit case</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Suitcase, suit case</alias>
+</Bag>
+
+<Bag rdf:about="#Q12058427">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">laptop bag</label>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+</Bag>
+
+<Bag rdf:about="#Q3033123">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">satchel</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a backpack carried by students</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+</Bag>
+
+<Bag rdf:about="#Q1190525">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duffel bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of large cylindrical bag</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duffle bag</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kit bag</alias>
+</Bag>
+
+<Bag rdf:about="#Q108864429">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">underarm bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a handbag carried under one's arm</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baguette bag</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baguette handbag</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">armpit bag</alias>
+</Bag>
+
+<Bag rdf:about="#Q5875128">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hobo bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">style of handbag</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+</Bag>
+
+<Bag rdf:about="#Q47107">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bucket</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">container</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pail</alias>
+</Bag>
+
+<Bag rdf:about="#Q15044071">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">garment bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">container of flexible material, usually used to ease transporting suits, jackets or clothings in general, and also to protect clothes from dust by hanging them inside with their hangers and then in the closet bar</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit bag</alias>
+</Bag>
+
+<Bag rdf:about="#Q108845791">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bucket bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a bag that resembles a bucket with its cylindrical shape, deep interior and tall sturdy sides</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bucket-style bag</alias>
+</Bag>
+
+<Bag rdf:about="#Q1346922">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saddlebag</label>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">saddle bag</alias>
+</Bag>
+
+<Bag rdf:about="#Q915026">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">briefcase</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">item to store possessions in</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">portfolio</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attache case</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">attaché case</alias>
+</Bag>
+
+<Bag rdf:about="#Q890094">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">messenger bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag or pouch with a long strap, designed to wear slung from one shoulder and across the body</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">courier bag</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bandolier bag</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cross-body bag</alias>
+</Bag>
+
+<Bag rdf:about="#Q29583086">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoe bag</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag, usually of fabric with a drawstring closure, used to protect shoes while in storage or when traveling</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+</Bag>
+
+<Bag rdf:about="#Q5843">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">backpack</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag carried on one's back</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">packsack</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">book bag</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rucksack</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tas</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pack</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knapsack</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tas Ransel</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">schoolbag</alias>
+</Bag>
+
+<Bag rdf:about="#Q80781381">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sports bag</label>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gym bag</alias>
+</Bag>
+
+<Bag rdf:about="#Q131740">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wallet</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small, flat case or pouch that is used to carry personal items such as cash</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bag</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purse</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">billfold</alias>
+</Bag>
+
+<Watch rdf:about="#Q4845080">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wearable technology</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clothing and accessories incorporating computer and advanced electronic technologies</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">watch</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wearable Device</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tech togs</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wearables</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fashion technology</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smartwear</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wearable Devices</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wearable Electronic Devices</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fashion electronics</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skin electronics</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wearable Electronic Device</alias>
+</Watch>
+
+<Watch rdf:about="#Q26965868">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wristwatch</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">watch designed to be worn on a wrist, attached by a watch strap or other type of bracelet</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">watch</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wrist watch</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">watch</alias>
+</Watch>
+
+<Watch rdf:about="#Q5362345">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smartwatch</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">computerized wristwatch</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">watch</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smart watch</alias>
+</Watch>
+
+<Belt rdf:about="#Q2944992">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tirador</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">broad leather belt, decorated with old coins and silver, worn by gauchos</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belt</sub_class>
+</Belt>
+
+<Belt rdf:about="#Q7502702">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoulder belt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belt worn usually over the right shoulder and across the body</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belt</sub_class>
+</Belt>
+
+<Belt rdf:about="#Q28839480">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">girdle</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">narrow belt, cord, sash, or the like, usually decorative and worn around the waist or hips to fasten or confine garments</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belt</sub_class>
+</Belt>
+
+<Belt rdf:about="#Q7978683">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">web belt</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belt made of webbing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belt</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">military belt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">webbed belt</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">skater belt</alias>
+</Belt>
+
+<Jewelry rdf:about="#Q1478508">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anklet</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornament worn around the ankle</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ankle bracelet</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ankle ornament</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ankle chain</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q44416">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">necktie</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clothing item, traditionally worn by boys and men with dress shirt</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tie (neckwear)</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kravata</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tie</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neck tie</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cravat</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q3575260">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bijou</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">piece of jewellery incorporated into clothing, or worn by itself on the body (typically on a necklace)</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">piece of jewelry</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">costume jewelry</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q1400678">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plume</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">decoration made of feathers, especially as an element in headdresses or worn in one's hair</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">feathered headdress</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q785480">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bolo tie</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">necktie of thin cord usually tipped with with aglets and fastened with a decorative slide</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bootlace tie</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shoestring necktie</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bola tie</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q29473501">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neckpiece</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornamental piece, often fur, worn at the neck; frequently trimmed with heads and tails of the fur-bearing animal (AAT)</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neck-piece</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fur choker</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q2867633">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clip-on tie</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pre-tied necktie with a clip to hold it in place</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snapper</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q694969">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewellery chain</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewellery made links of, or imitating, precious metal and worn as an ornament</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewellery chains</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q6414681">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kipper tie</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of wide necktie</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+</Jewelry>
+
+<Jewelry rdf:about="#Q29051417">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neckcloth</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloths of varying form worn at the neck</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+</Jewelry>
+
+<Jewelry rdf:about="#Q39994">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">school tie</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">necktie in an exclusive pattern, signifying attendance at a particular school</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">old school tie</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q6985603">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neckwear</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any of various fashion accessories worn at or around  the neck</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neckpiece</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q14125">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bow tie</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variety of necktie</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bowtie</alias>
+</Jewelry>
+
+<Jewelry rdf:about="#Q1536584">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">partlet</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleeveless garment worn over the neck and shoulders, or to fill in a low neckline</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jewelry</sub_class>
+</Jewelry>
+
+<Eyeglasses rdf:about="#Q217541">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sunglasses</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of glasses</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eyeglasses</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dark glasses</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sun glasses</alias>
+</Eyeglasses>
+
+<Eyeglasses rdf:about="#Q15978715">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smartglasses</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wearable computer that adds information to what the wearer sees</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eyeglasses</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">digital eye glass</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smart glasses</alias>
+</Eyeglasses>
+
+<Eyeglasses rdf:about="#Q723258">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">belay glasses</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">special eyeglasses for rock climbing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">accessories</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eyeglasses</sub_class>
+</Eyeglasses>
+
+<Hosiery rdf:about="#Q5426205">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-string</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strip of cloth passed from front to back between the legs, attached to and supported by a cord or band around the waist</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thong</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tanga</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q1097922">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leg warmer</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">footless hosiery covering the lower legs</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">greave</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q43663">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sock</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">item of clothing for the feet</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socks</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q660782">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leggings</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type of garment that covers the leg, usually up to the ankle</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+</Hosiery>
+
+<Hosiery rdf:about="#Q1107568">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male hosiery</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery marketed towards male wearers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hose for men</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pantyhose for men</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male pantyhose</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery for men</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">male hose</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q193017">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stocking</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery that covers the feet and legs to the knee or higher</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stockings</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q3651083">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tights</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heavy, opaque stockings woven in one with panties</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+</Hosiery>
+
+<Hosiery rdf:about="#Q276389">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pantyhose</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sheer stockings woven in one with panties</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sheers</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pantihose</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sheer tights</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pantyhose</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q3757905">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knee highs</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery that cover the feet and legs up to the knee</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knee-high socks</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">below-the-knee socks</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q27768255">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woolen sock</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wool sock of the Netherlands</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+</Hosiery>
+
+<Hosiery rdf:about="#Q7544406">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smelly socks</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">socks that have acquired a strong odour due to prolonged wearing</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+</Hosiery>
+
+<Hosiery rdf:about="#Q1134320">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">over-the-knee socks</label>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">knee socks</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">over-knee socks</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q6692997">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low-cut sock</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subclass_of sock</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+</Hosiery>
+
+<Hosiery rdf:about="#Q6515436">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gym sock</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sock with a non-slip sole, worn for gymnastics and other indoor activities</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+</Hosiery>
+
+<Hosiery rdf:about="#Q1348060">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose sock</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fashion worn by Japanese high school girls and adopted by anime fans</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baggy sock</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q10516293">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-slip sock</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sock with gripper treads to prevent slipping</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-skid sock</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gripper sock</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hospital sock</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grip sock</alias>
+</Hosiery>
+
+<Hosiery rdf:about="#Q4766089">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anklet</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">originally, a short, thin dress sock just reaching the ankle; also any low-cut sock</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosiery</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ankle sock</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bare sock</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sneaker sock</alias>
+</Hosiery>
+
+<Suit rdf:about="#Q1077396">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boilersuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose-fitting protective suit</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">utility jumpsuit</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coveralls</alias>
+</Suit>
+
+<Suit rdf:about="#Q15807604">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-piece suit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any of various garments combining coverings for the upper and lower body</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-piece garments</alias>
+</Suit>
+
+<Suit rdf:about="#Q7203545">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">playsuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">woman's lingerie consisting of a combination  of a top and shorts</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q29353494">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bedjacket</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waist-length jackets or capes worn over nightclothes</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q2153824">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wrestling singlet</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-piece uniform worn by wrestlers</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q7575653">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">speedsuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">snug-fitting one-piece suit worn for athletic activity</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q1820061">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">leotard</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unisex skin-tight one-piece garment that covers the torso, with or without legs, worn by dancers and gymnasts</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q818941">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">romper</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-piece combination of shorts and a shirt worn by both children and adults</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">romper suit</alias>
+</Suit>
+
+<Suit rdf:about="#Q7093751">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">onesie</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loose-fitting casual jumpsuit for adults</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+</Suit>
+
+<Suit rdf:about="#Q890119">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodysuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-piece form-fitting garment that covers the torso and the crotch</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">body</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creeper</alias>
+</Suit>
+
+<Suit rdf:about="#Q16472452">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jumpsuit</label>
+  <description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-piece suit consisting of conjoined shirt or top and trousers, originally worn by parachutists</description>
+  <main_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lingerie</main_class>
+  <sub_class rdf:datatype="http://www.w3.org/2001/XMLSchema#string">suit</sub_class>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jump suit</alias>
+  <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">catsuit</alias>
+</Suit>
+
+
+</rdf:RDF>
